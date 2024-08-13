@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Git Crash Course</title>
+</head>
+
+<body>
+  <!--
+
+  // 'Git' is the most popular "Version Control System"
+  // What is "Version Control System" ? 
+  // "Version Control System" helps us to keep 'record different versions' of our project
+
+  // BENEFITS OF USING GIT:
+  // 'Git' helps us to store different versions of our Projects very systematically and without taking extra storage
+  // With Git, we can track project History very effectively
+  // With Git, Don't worry about manual backup and recovery
+  // With Git, we can know when particular changes are done and who did those changes
+  // Git makes collaboration with Team members very easy
+  // And many more benefits...
+
+
+  // VARIOUS WAYS TO USE GIT:
+  // Using 'Command Line' 
+  // Using 'Code Editor'
+  // Another way of use Git is by using 'GUI(Graphical User Interface) tools', Here "GUI" means we can use application which is specially made for using 'Git' such as 'Github', 'Gitkraken' 'BitBucket', etc 
+
+  // WHICH IS THE BEST WAY OF USE GIT:
+  // The best way of use 'Git' is by using 'Command Line' because All GUI tools has some 'Limitation'
+  // Another reason All GUI tools are not always available, for eg: Servers do not allow to use 'Git' for some reason
+
+
+  // SETTING UP "GIT" IN SYSTEM:
+  // Write "Git Download" in Google Search and Download
+  // then to check, Open Terminal and write 'git --version' command
+
+  // After install 'Git' in system we need to configure setting like username, email, default code editor, line ending configuration
+
+  // Now we can set this configuration setting at 3 Level:
+  // "SYSTEM LEVEL":- which is for all Users in this System
+  // "GLOBAL LEVEL":- which is for all Repository of the Current User
+  // "LOCAL LEVEL":- which is the for Current Repository
+
+  // Now to set configuration settings, First open Terminal and write the below commands:
+
+  // * git config --global user.name "Pravesh Poonia"  ==> [whatever name you will write here will show in Repository History]
+  // * git config --global user.email abc@gmail.com
+
+  // * git config --global core.editor "code --wait"   ==> [This is optional command to set default Code Editor, here we write command for VS code, here '--wait' is added because this wait will tell the terminal to wait until we close the VS code window] 
+  // * git config --global -e  ==> this will get the configuration File in VS Code from here we can we can change the config value 
+
+
+  // LINE END SETTING:
+  // This setting is very useful when we are working with cross Platforms
+  // To Fix this issue, we have config setting called "autoCRLF[Carriage Return(\r) and Line Feed(\n)]"
+  // * git config --global core.autocrlf true
+  // For Mac/Linux User ==> git config --global core.autocrlf input
+
+
+  // INITIALIZING GIT RESPOSITORY:
+  // The `git init` command initializes a Git repository by creating a ".git" folder. This folder is essential for enabling Git commands within the repository.
+  // "Git Repository" basically means Git is tracking the Project History
+  // "git init"  ==> Initialize Git Repository in current Project
+  // "rm -rf .git"  ==>  Remove whole Git Folder from the Project
+
+
+  // HOW GIT REALLY WORKS?
+  // Why we need "Staging Area" ?
+  // Without 'Staging Area', whatever we do in our local code that all code will "store directly in our repository" and we cannot get chance to see what we change and what we remove in compare to Previous Code
+
+  // Use "git add" to stage specific files or changes you want to include in the next commit.
+  // git add index.html         # Stage changes in index.html
+  // git add .                  # Stage all changes in the current directory
+  // git add *.html             # Add all files with extension .html in staging area
+
+
+  // Use "git reset" to unstage files or changes from the staging area.
+  // git reset HEAD index.html     # Unstage changes in index.html
+  // git reset                     # Unstage all changes
+
+  // Use "git commit -m "" to permanently save the staged changes as a new commit in the Git repository.
+  // git commit -m "Add new feature"    # Commit the current staging area code
+  // git commit                         # Commit the current staging area code and we can write long and short both description
+
+  // Commit Information
+  // * Unique ID (cab be Ticket Number)
+  // * Date and Time
+  // * Author Name and Email (who commit this code)
+  // * Commit Message
+
+  // Best Practice for Git Commits
+  // * Don't commit for "every small change"
+  // * Commit Size should "not too small or not too big"
+  // * Each commit should a "logically separate change set"
+  // * Write a "meaningful commit message"
+  // ==> At the end you are the Best Judge for your situation
+
+
+
+  // HOW TO SKIP STAGING AREA?
+  // yes, don't really skip the 
+  // * git commit -am "Combination of add and commit command."
+
+  -->
+</body>
+
+</html>
